@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script src="out/goog/base.js"></script>
+    <script src="out/cljs_deps.js"></script>
+    <script>if (typeof goog != "undefined") { goog.require("undead.client"); } else { console.warn("ClojureScript could not load :main, did you forget to specify :asset-path?"); };</script>
+    <script>if (typeof goog != \"undefined\") { goog.require(\"figwheel.connect\"); }</script>
+    <script src="app.js"></script>
+  </body>
+</html>
